@@ -6,11 +6,14 @@ Electronic Health Records Automation
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+Browser automation to fill out a patient chart in a sample Electronic Health Records (EHR) System.
 	
 ## Prerequisites
 Requirements for running the project:
 * JDK Installation
+Link for downloading JDK 8 (64 bit)
+https://filehippo.com/download_java_development_kit_64/8.0.66/
+1. After downloading click on "show in folder".
 * Setup Environment Variables
 * Eclipse IDE Installation
 	
