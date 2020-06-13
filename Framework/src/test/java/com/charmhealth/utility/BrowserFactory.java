@@ -18,6 +18,7 @@ public class BrowserFactory {
 			
 			
 		}
+	//   Comment added for firefox and IE drivers
 		
 	/*	else if (browserName.equals("Firefox"))
 		{
