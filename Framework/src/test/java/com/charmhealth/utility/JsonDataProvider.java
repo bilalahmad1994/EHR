@@ -1,7 +1,9 @@
 package com.charmhealth.utility;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -9,23 +11,37 @@ import org.json.simple.parser.ParseException;
 
 public class JsonDataProvider {
 	
-	public JsonDataProvider() throws IOException, ParseException 
+
+	
+	public String get_data(String key) 
 	{
-	
-	JSONParser jsonparser = new JSONParser();
+		String data = "";
 		
-    FileReader reader = new FileReader("./TestData/sample.json");
-    
-	Object obj = jsonparser.parse(reader);
-	
-	JSONObject samplejsonobj = (JSONObject)obj; 
-	
-	//String fname=(String)samplejsonobj.get("name");
-	
-    String fname=(String)samplejsonobj.get("name");
-    
-    String History= (String)samplejsonobj.get("History_of_Present_Illness");
-	
-	
+		try {
+			JSONParser jsonparser = new JSONParser();
+			
+		    FileReader reader;
+			
+			reader = new FileReader("./TestData/sample.json");
+			 
+			Object obj;
+			
+		    obj = jsonparser.parse(reader);
+		
+			
+			JSONObject samplejsonobj =(JSONObject)obj;
+			
+			data= (String)samplejsonobj.get(key);
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException | ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}   
+		
+		return data;
 	}
 }

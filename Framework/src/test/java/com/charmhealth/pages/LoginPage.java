@@ -13,26 +13,33 @@ public class LoginPage {
 		this.driver=ldriver;
 	}
 	
-	@FindBy(className = "signin-button") WebElement LoginButton;
-	@FindBy(name = "lid") WebElement uname;
-	@FindBy(name = "pwd") WebElement pass;
-	@FindBy(id = "signin_submit") WebElement SigninButton;
+	//@FindBy(className = "signin-button") WebElement LoginButton;
+	@FindBy(xpath = "//input[@name='username']") WebElement uname;
+	@FindBy(xpath ="//input[@name='password']") WebElement pass;
+	@FindBy(xpath ="//input[@name='officeKey']") WebElement key;
+	@FindBy(xpath ="//button[contains(.,'Log in')]") WebElement LoginButton;
+	@FindBy(xpath = "//label[contains(.,'EHR')]") WebElement EHR_Checkbox;
 	
-	public void logintoCharmHealth(String username, String password)
+	public void logintoCharmHealth(String username, String password, String officekey)
 	{
-		LoginButton.click();
+		//LoginButton.click();
 		
-		try 
-		{
-			Thread.sleep(3000);
-		}
-		catch (InterruptedException e) {
-			
-		}
+		//try 
+		//{
+		//	Thread.sleep(3000);
+		//}
+		//catch (InterruptedException e) {			
+		//}
+		driver.switchTo().frame("frame-login");
 		
 		uname.sendKeys(username);
+		pass.click();
 		pass.sendKeys(password);
-		SigninButton.click();
+		key.click();
+		key.sendKeys(officekey);
+		EHR_Checkbox.click();
+		LoginButton.click();
+		
 		
 		try 
 		{

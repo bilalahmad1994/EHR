@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45260" started-at="2020-06-14T05:55:11Z" finished-at="2020-06-14T05:55:56Z">
+  <suite name="Default suite" duration-ms="114718" started-at="2020-06-20T17:07:20Z" finished-at="2020-06-20T17:09:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45260" started-at="2020-06-14T05:55:11Z" finished-at="2020-06-14T05:55:56Z">
+    <test name="Default test" duration-ms="114718" started-at="2020-06-20T17:07:20Z" finished-at="2020-06-20T17:09:15Z">
       <class name="com.charmhealth.testcases.LoginTestCharmHealth">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.charmhealth.testcases.LoginTestCharmHealth@59f99ea]" name="setUpSuite" is-config="true" duration-ms="20" started-at="2020-06-14T05:55:11Z" finished-at="2020-06-14T05:55:11Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.charmhealth.testcases.LoginTestCharmHealth@59f99ea]" name="setUpSuite" is-config="true" duration-ms="24" started-at="2020-06-20T17:07:20Z" finished-at="2020-06-20T17:07:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.charmhealth.testcases.LoginTestCharmHealth@59f99ea]" name="setup" is-config="true" duration-ms="35784" started-at="2020-06-14T05:55:11Z" finished-at="2020-06-14T05:55:47Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.charmhealth.testcases.LoginTestCharmHealth@59f99ea]" name="setup" is-config="true" duration-ms="18304" started-at="2020-06-20T17:07:20Z" finished-at="2020-06-20T17:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.charmhealth.testcases.LoginTestCharmHealth@59f99ea]" name="loginApp" duration-ms="8757" started-at="2020-06-14T05:55:47Z" finished-at="2020-06-14T05:55:55Z">
+        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.charmhealth.testcases.LoginTestCharmHealth@59f99ea]" name="loginApp" duration-ms="96390" started-at="2020-06-20T17:07:39Z" finished-at="2020-06-20T17:09:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.charmhealth.testcases.LoginTestCharmHealth@59f99ea]" name="teardown" is-config="true" duration-ms="687" started-at="2020-06-14T05:55:55Z" finished-at="2020-06-14T05:55:56Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.charmhealth.testcases.LoginTestCharmHealth@59f99ea]" name="teardown" is-config="true" duration-ms="0" started-at="2020-06-20T17:09:15Z" finished-at="2020-06-20T17:09:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
