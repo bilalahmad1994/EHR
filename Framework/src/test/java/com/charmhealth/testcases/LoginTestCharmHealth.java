@@ -12,6 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import com.charmhealth.pages.BaseClass;
+import com.charmhealth.pages.Demo;
+import com.charmhealth.pages.HomePage;
 import com.charmhealth.pages.LoginPage;
 import com.charmhealth.utility.JsonDataProvider;
 
@@ -40,10 +42,6 @@ public class LoginTestCharmHealth extends BaseClass {
         		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         		System.out.println("Child window id = "+child);
         		System.out.println("Child window title = "+driver.getTitle());
-        		//Open date picker
-        		//driver.findElement(By.xpath("//span[@class='amds-displayed-date']//span[2]")).click();
-        		//Select month drop down
-        		//driver.findElement(By.xpath("//body//select[1]")).click();
         		
         	//selecting values of month and year from drop down  
         	/*	List<WebElement> months= driver.findElements(By.className("ng-tns-c40-0 ng-star-inserted"));
@@ -90,15 +88,12 @@ public class LoginTestCharmHealth extends BaseClass {
         	    	//Select the day from date picker equal to the day in expected_date
         	    	driver.findElement(By.xpath("//a[.='" + Day + "']")).click();
         	    } 	
-        	    	List<WebElement> buttonToClick = driver.findElements(By.className("amds-ehr-scheduler-appointment-name"));
         	    	
-        	    	for (int i=0;i<buttonToClick.size();i++)
-        	    	{
-        	    	WebElement a=buttonToClick.get(i);
-        	    	a.click();
-        	    	}
+        	    HomePage h = new HomePage(driver);
+        	    h.Collecting_Patient_Data();
 
-        	    	
+        	  //  Demo d = new Demo(driver);
+        	  //  d.Match_Data(j.get_data("name"), j.get_data("age"), j.get_data("gender"));
         	    
         	}
         	
